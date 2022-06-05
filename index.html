@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Pokemon Battle Game</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!-- CREATE CUSTOM FONTS -->
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!-- Goblin One -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <!-- Create the navigation bar at the top of the page -->
+    <header>
+      <div class="titleText">
+        Pokemon Battle Game
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="index.html">Main page</a></li>
+          <li><a href="selectpokemon.html">Play</a></li>
+        </ul>
+      </div>
+    </header>
+    
+    <div class="container">
+
+      <!-- Text -->
+      <div class="bodyText">
+        <!-- Set the header title of the page -->
+        <h1>
+          Welcome!
+        </h1>
+        <p>
+          ...to the Pokemon game! In this game, you will be fighting as a Pokemon against an AI with a different Pokemon!
+        </p><p>
+          Here are a few simple rules and concepts to get you started:
+        </p>
+        <div class="pageImgLeft">
+          <img src="images/homepage/ditto.png">
+        </div>
+        <h3>
+          Health:
+        </h3><p>
+          Each Pokemon starts with a different amount of health. You must reduce the amount of health of the enemy down to 0 or less to win. If the enemy reduces your health to 0 or less, you will lose. If you and the enemy end up at 0 or less health at the end of the enemy's turn, you will win because you dealt the damage first. Some abilities let you regain health, which vary from Pokemon to Pokemon.
+        </p><h3>
+          Energy:
+        </h3><p>
+          All abilities cost a certain amount of energy! You can't play an ability if you don't have enough energy. You can regain 20 energy by not doing any damage to the enemy. Typically the Heal/Plan/Rest ability deals no damage and will let you regain energy.
+        </p>
+        <div class="pageImgRight">
+          <img src="images/homepage/pikachu.png">
+        </div>
+        <h3>
+          Abilities:
+        </h3><p>
+          Some abilities will do certain things. Many abilities will deal damage to the other Pokemon. Some abilities will have a damage multiplier attached to it. This will multiply the damage your Pokemon will deal for the next turn. Most abilities will also have a strength attached to it. If you play that ability and the enemy has the same weakness, your damage will be multiplied by 1.5-2. If the game stretches on to turn 7, all abilities will double their damage.
+        <br>
+          Now you know everything you need to know when playing this game. Good luck and have fun!
+        </p>
+          <a href="selectpokemon.html" class="getStartedBtn">Click to get started!</a>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

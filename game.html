@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Pokemon Battle Game</title>
+    <link href="game.css" rel="stylesheet" type="text/css" />
+
+    <!-- CREATE CUSTOM FONTS -->
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!-- Goblin One -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+  </head>
+  <body onload="setupGame()">
+    <!-- Create the navigation bar at the top of the page -->
+    <header>
+      <div class="titleText">
+        Pokemon Battle Game
+      </div>
+    </header>
+    <ul>
+      <li class="playerSide">
+        <div id="playerPokemon"><!-- This is where the Pokemon img and its appropriate styles goes when script.js decides where things go --></div>
+        <div id="playerPokemonName"></div>
+        <div class="hpText">
+          HP: 
+          <div class="hpBox">
+            <div id="playerHpBar"></div>
+            <div id="playerHpText"></div>
+          </div>
+        </div>
+        <div class="energyText">
+          Energy: 
+          <div class="energyBox">
+            <div id="playerEnergyBar"></div>
+            <div id="playerEnergyText"></div>
+          </div>
+        </div>
+      </li>
+      <li class="split"></li>
+      <li class="enemySide">
+        <div id="enemyPokemon"><!-- This is where the Pokemon img and its appropriate styles goes when script.js decides where things go --></div>
+        <div id="enemyPokemonName"></div>
+        <div class="hpText">
+          HP:
+          <div class="hpBox">
+            <div id="enemyHpBar"></div>
+            <div id="enemyHpText"></div>
+          </div>
+        </div>
+        <div class="energyText">
+          Energy: 
+          <div class="energyBox">
+            <div id="enemyEnergyBar"></div>
+            <div id="enemyEnergyText"></div>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <div class="bottomMenu">
+      <div id="bMenuHeadingText"></div>
+      <div id="damageText"></div>
+      <div id="damageSubtext"></div>
+      <div id="attackButtons"></div>
+    </div>
+
+    <div id="centerMenu"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

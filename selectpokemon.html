@@ -1,0 +1,179 @@
+<!-- I don't know why it says I submitted this project, but I haven't yet -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Pokemon Game Part 2</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!-- CREATE CUSTOM FONTS -->
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!-- Goblin One -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Create the navigation bar at the top of the page -->
+    <header>
+      <div class="titleText">
+        Pokemon Battle Game
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="index.html">Main page</a></li>
+          <li><a href="selectpokemon.html">Play</a></li>
+        </ul>
+      </div>
+    </header>
+
+
+
+    <div class="container">
+      <div class="bodyText">
+        <h1>
+          Choose your Pokemon
+        </h1>
+      </div>
+      <div class="pokemonBodyText">
+        <!-- LIST OF POKEMON:
+        "Pikachu", "Squirtle", "Mewtwo", "Alakazam", "Charmander", "Greninja", "Lucario", "Amoonguss", "Zoroark", "Starmie", "Wailord", "Diglett", "Burmy", "Ditto"
+        -->
+        <ul>
+          <li>
+            <div class="pokemonTitle">Pikachu</div>
+            <div class="pokemonBtn"><a onclick="beginGame(0)" href="game.html">Play!</a></div>
+            <div class="pokemonImg"><img src="images/pokemonSelect/pokemonImages/pikachu.png"></div>
+            <div class="pokemonStats">
+              <div class="name">Starting health:</div> 60<br>
+              <div class="name">Starting energy:</div> 90<br>
+              <div class="name">Weakness:</div> Magic
+            </div>
+          </li><li>
+            <div class="pokemonTitle">Squirtle</div>
+            <div class="pokemonBtn"><a onclick="beginGame(1)" href="game.html">Play!</a></div>
+            <div class="pokemonImg"><img src="images/pokemonSelect/pokemonImages/squirtle.png"></div>
+            <div class="pokemonStats">
+              <div class="name">Starting health:</div> 50<br>
+              <div class="name">Starting energy:</div> 115<br>
+              <div class="name">Weakness:</div> Fire
+            </div>
+          </li><li>
+            <div class="pokemonTitle">Mewtwo</div>
+            <div class="pokemonBtn"><a onclick="beginGame(2)" href="game.html">Play!</a></div>
+            <div class="pokemonImg"><img src="images/pokemonSelect/pokemonImages/mewtwo.png"></div>
+            <div class="pokemonStats">
+              <div class="name">Starting health:</div> 100<br>
+              <div class="name">Starting energy:</div> 40<br>
+              <div class="name">Weakness:</div> Electricity
+            </div>
+          </li><li>
+            <div class="pokemonTitle">Alakazam</div>
+            <div class="pokemonBtn"><a onclick="beginGame(3)" href="game.html">Play!</a></div>
+            <div class="pokemonImg"><img src="images/pokemonSelect/pokemonImages/alakazam.png"></div>
+            <div class="pokemonStats">
+              <div class="name">Starting health:</div> 70<br>
+              <div class="name">Starting energy:</div> 75<br>
+              <div class="name">Weakness:</div> Kinetic
+            </div>
+          </li><li>
+            <div class="pokemonTitle">Charmander</div>
+            <div class="pokemonBtn"><a onclick="beginGame(4)" href="game.html">Play!</a></div>
+            <div class="pokemonImg"><img src="images/pokemonSelect/pokemonImages/charmander.png"></div>
+            <div class="pokemonStats">
+              <div class="name">Starting health:</div> 70<br>
+              <div class="name">Starting energy:</div> 80<br>
+              <div class="name">Weakness:</div> Water
+            </div>
+          </li><li>
+            <div class="pokemonTitle">Greninja</div>
+            <div class="pokemonBtn"><a onclick="beginGame(5)" href="game.html">Play!</a></div>
+            <div class="pokemonImg"><img src="images/pokemonSelect/pokemonImages/greninja.png"></div>
+            <div class="pokemonStats">
+              <div class="name">Starting health:</div> 125<br>
+              <div class="name">Starting energy:</div> 20<br>
+              <div class="name">Weakness:</div> Electricity
+            </div>
+          </li><li>
+            <div class="pokemonTitle">Lucario</div>
+            <div class="pokemonBtn"><a onclick="beginGame(6)" href="game.html">Play!</a></div>
+            <div class="pokemonImg"><img src="images/pokemonSelect/pokemonImages/lucario.png"></div>
+            <div class="pokemonStats">
+              <div class="name">Starting health:</div> 110<br>
+              <div class="name">Starting energy:</div> 50<br>
+              <div class="name">Weakness:</div> Magic
+            </div>
+          </li><li>
+            <div class="pokemonTitle">Amoonguss</div>
+            <div class="pokemonBtn"><a onclick="beginGame(7)" href="game.html">Play!</a></div>
+            <div class="pokemonImg"><img src="images/pokemonSelect/pokemonImages/amoonguss.png"></div>
+            <div class="pokemonStats">
+              <div class="name">Starting health:</div> 80<br>
+              <div class="name">Starting energy:</div> 70<br>
+              <div class="name">Weakness:</div> Fire
+            </div>
+          </li><li>
+            <div class="pokemonTitle">Zoroark</div>
+            <div class="pokemonBtn"><a onclick="beginGame(8)" href="game.html">Play!</a></div>
+            <div class="pokemonImg"><img src="images/pokemonSelect/pokemonImages/zoroark.png"></div>
+            <div class="pokemonStats">
+              <div class="name">Starting health:</div> 90<br>
+              <div class="name">Starting energy:</div> 60<br>
+              <div class="name">Weakness:</div> Life
+            </div>
+          </li><li>
+            <div class="pokemonTitle">Starmie</div>
+            <div class="pokemonBtn"><a onclick="beginGame(9)" href="game.html">Play!</a></div>
+            <div class="pokemonImg"><img src="images/pokemonSelect/pokemonImages/starmie.png"></div>
+            <div class="pokemonStats">
+              <div class="name">Starting health:</div> 80<br>
+              <div class="name">Starting energy:</div> 80<br>
+              <div class="name">Weakness:</div> Life
+            </div>
+          </li><li>
+            <div class="pokemonTitle">Wailord</div>
+            <div class="pokemonBtn"><a onclick="beginGame(10)" href="game.html">Play!</a></div>
+            <div class="pokemonImg"><img src="images/pokemonSelect/pokemonImages/wailord.png"></div>
+            <div class="pokemonStats">
+              <div class="name">Starting health:</div> 200<br>
+              <div class="name">Starting energy:</div> 240<br>
+              <div class="name">Weakness:</div> Electricity
+            </div>
+          </li><li>
+            <div class="pokemonTitle">Diglett</div>
+            <div class="pokemonBtn"><a onclick="beginGame(11)" href="game.html">Play!</a></div>
+            <div class="pokemonImg"><img src="images/pokemonSelect/pokemonImages/diglett.png"></div>
+            <div class="pokemonStats">
+              <div class="name">Starting health:</div> 60<br>
+              <div class="name">Starting energy:</div> 140<br>
+              <div class="name">Weakness:</div> Life
+            </div>
+          </li><li>
+            <div class="pokemonTitle">Burmy</div>
+            <div class="pokemonBtn"><a onclick="beginGame(12)" href="game.html">Play!</a></div>
+            <div class="pokemonImg"><img src="images/pokemonSelect/pokemonImages/burmy.png"></div>
+            <div class="pokemonStats">
+              <div class="name">Starting health:</div> 60<br>
+              <div class="name">Starting energy:</div> 100<br>
+              <div class="name">Weakness:</div> Fire
+            </div>
+          </li><li>
+            <div class="pokemonTitle">Ditto</div>
+            <div class="pokemonBtn"><a onclick="beginGame(13)" href="game.html">Play!</a></div>
+            <div class="pokemonImg"><img src="images/pokemonSelect/pokemonImages/ditto.png"></div>
+            <div class="pokemonStats">
+              <div class="name">Starting health:</div> 50<br>
+              <div class="name">Starting energy:</div> 100<br>
+              <div class="name">Weakness:</div> Kinetic
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
